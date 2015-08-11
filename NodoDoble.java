@@ -1,5 +1,5 @@
 public class NodoDoble extends Nodo{
 	
-	private Nodo Previous;
+	private Nodo previous;
 	
 }
