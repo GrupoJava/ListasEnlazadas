@@ -14,10 +14,5 @@ public class NodoDoble<E> extends Nodo<E>{
 	}
 	public void setPrevious(Nodo<E> previous) {
 		this.previous = previous;
-	}
-
-
-	
-	
-	
+	}	
 }
