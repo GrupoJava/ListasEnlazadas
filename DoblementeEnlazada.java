@@ -22,8 +22,14 @@ public class DoblementeEnlazada <E> extends SimplementeEnlazada <E>{
 		cont++;
 	}
 	
-	public E removeFirst() { //Este no sé
+	public E removeFirst() {
 		
+		if (size()!=0){
+			NodoDoble<E> temp = (NodoDoble<E>) head.getNext();
+			NodoDoble<E> temp2 =(NodoDoble<E>) head;
+			head = temp;
+			return (E) temp2;
+		}
 		return null;
 	}
 	
@@ -56,7 +62,19 @@ public class DoblementeEnlazada <E> extends SimplementeEnlazada <E>{
 		return tail.getValor();
 	}
 	
-	public boolean contains(E value) { // D:
+	public boolean contains(E value) { 
+		int i = 0;
+		NodoDoble<E> temp = head;
+		while (i<size()){
+			if (temp.valor == value){
+				return true;
+			}
+			else
+			{
+				temp = (NodoDoble<E>) temp.getNext();
+			}
+			i++;
+		}
 		
 		return false;
 	}
