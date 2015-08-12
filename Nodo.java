@@ -6,6 +6,7 @@ public class Nodo<E> {
 	
 	public Nodo(E v){
 		valor = v;
+		 
 	}
 	
 	public void setNext(Nodo<E> E){
