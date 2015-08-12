@@ -3,7 +3,6 @@ public class Nodo<E> {
 	protected E valor;
 	protected Nodo<E> next;
 	
-	
 	public Nodo(E v){
 		valor = v;
 		 

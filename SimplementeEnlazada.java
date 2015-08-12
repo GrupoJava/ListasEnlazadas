@@ -1,9 +1,16 @@
 public class SimplementeEnlazada<E> implements listaEnlazada<E>{
 	
-	int cont = 0;
-	protected Nodo<E> head = null; //Primer elemento
+	protected int cont;
+	protected Nodo<E> head; //Primer elemento
 	
 	
+	public SimplementeEnlazada(E v) {
+		cont = 0;
+		head = null;
+		
+		// TODO Auto-generated constructor stub
+	}
+
 	public int size() {
 		return cont;
 	}

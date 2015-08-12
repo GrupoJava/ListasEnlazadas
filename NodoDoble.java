@@ -1,6 +1,6 @@
 public class NodoDoble<E> extends Nodo<E>{
 	
-	private Nodo<E> previous;
+	private NodoDoble<E> previous;
 	
 	
 	public NodoDoble(E v) {
@@ -8,10 +8,10 @@ public class NodoDoble<E> extends Nodo<E>{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Nodo<E> getPrevious() {
+	public NodoDoble<E> getPrevious() {
 		return previous;
 	}
-	public void setPrevious(Nodo<E> previous) {
+	public void setPrevious(NodoDoble<E> previous) {
 		this.previous = previous;
 	}	
 }
