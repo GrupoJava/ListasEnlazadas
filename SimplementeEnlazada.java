@@ -56,7 +56,13 @@ public class SimplementeEnlazada<E> implements listaEnlazada<E>{
 	}
 	
 	public E getLast() {
-		return null;
+		Nodo <E> finger = head;
+		Nodo <E> previous = null;
+		while (finger.getNext() != null){ //fin de la lista
+			previous = finger;
+			finger = finger.getNext();
+		}
+		return previous.getValor();
 	}
 	
 	public boolean contains(E value) {
